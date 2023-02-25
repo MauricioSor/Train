@@ -1,7 +1,20 @@
-
-nav{
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Vinyl&family=Special+Elite&display=swap');
+#estiloNav{
     background: linear-gradient(to bottom right,black, #C9E265 80%);
 }
 #letreroLogo{
-    
+    font-family: 'Black Ops One', cursive;
+}
+.hero-container {
+    background: url(./img/cierrese-arriba-muchas-pesas-gimnasia-metal-estante-gimnasio-deporte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#resaltado{
+    color:  #C9E265;
+    text-shadow: 1px 1px 2px black;
+}
+#frase{
+    font-size: 90px;
 }
