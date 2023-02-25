@@ -3,7 +3,7 @@
     background: linear-gradient(to bottom right,black, #C9E265 80%);
 }
 #estilo{
-    background: linear-gradient(to top ,black, #C9E265 80%);;
+    background: linear-gradient(to top ,black, #C9E265 90%);;
 }
 #letreroLogo{
     font-family: 'Black Ops One', cursive;
@@ -24,7 +24,11 @@
 main{
     width: 100%;
 }
-p{
+.items{
 font-size: 30px;
 font-family:'Oswald', sans-serif;
+}
+
+.text-bg-success{
+    background-color:#C9E265;
 }
