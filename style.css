@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Vinyl&family=Special+Elite&display=swap');
-#estiloNav{
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@500&family=Rubik+Vinyl&family=Special+Elite&family=Tilt+Warp&display=swap');
+#estilo{
     background: linear-gradient(to bottom right,black, #C9E265 80%);
 }
 #letreroLogo{
@@ -13,8 +13,15 @@
 }
 #resaltado{
     color:  #C9E265;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 6px 5px rgba(75, 188, 5, 0.483);
 }
 #frase{
     font-size: 90px;
+}
+main{
+    width: 100%;
+}
+p{
+font-size: 30px;
+font-family:'Oswald', sans-serif;
 }
