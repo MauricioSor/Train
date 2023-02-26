@@ -28,10 +28,21 @@ main{
 font-size: 30px;
 font-family:'Oswald', sans-serif;
 }
-#tituloLista{
+.tituloLista{
     font-size: 50px;
+    font-family: 'Black Ops One', cursive;
+}
+#tituloHorario{
+    font-size: 30px;
+    font-family: 'Black Ops One', cursive;
+}
+#subTituloHorario{
+    font-size: 28px;
     font-family: 'Black Ops One', cursive;
 }
 .cards{
     background-color: #C9E265;
+}
+.resaltado{
+    color: #C9E265;
 }
