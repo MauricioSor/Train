@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@500&family=Rubik+Vinyl&family=Special+Elite&family=Tilt+Warp&display=swap');
-#estiloNav{
-    background: linear-gradient(to bottom right,black, #C9E265 80%);
-}
 #estilo{
     background: linear-gradient(to top ,black, #C9E265 90%);
 }
@@ -45,4 +42,7 @@ font-family:'Oswald', sans-serif;
 }
 .resaltado{
     color: #C9E265;
+}
+a{
+    text-decoration: none;
 }

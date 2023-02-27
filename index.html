@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
             <div class="container">
                 <!-- Alternativa 1 con imagen (quitar id de nav)-->
                 <a class="navbar-brand text-light text-center" href="./index.html"><img src="img/logo1.png" alt=""
@@ -30,14 +30,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="./dondeEstamos.html">Donde
-                                Estamos</a>
-                            <a class="nav-link text-light" aria-current="page" href="#horarios">Horarios</a>
-                            <a class="nav-link text-light" aria-current="page" href="#packsEntrenamiento">Packs de entrenamiento</a>
-                        </li>
-                    </ul>
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link text-light" aria-current="page" href="./dondeEstamos.html">Donde
+                            Estamos</a>
+                        <a class="nav-link text-light" aria-current="page" href="#horarios">Horarios</a>
+                        <a class="nav-link text-light" aria-current="page" href="#packsEntrenamiento">Packs de
+                            entrenamiento</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -101,8 +100,8 @@
                 </div>
             </div>
             <article id="horarios" class="row">
-            <hr class="border border-1 opacity-75 mt-4">
-            <h4  class="tituloLista text-center text-light mt-2">Nuestros Horarios de Atencion</h4>
+                <hr class="border border-1 opacity-75 mt-4">
+                <h4 class="tituloLista text-center text-light mt-2">Nuestros Horarios de Atencion</h4>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <h4 id="subTituloHorario" class="text-center text-light">Lunes,Miercoles y Viernes</h4>
                     <p id="resaltado" class="items text-center">15:00hs a 21:00 hs</p>
@@ -127,18 +126,51 @@
                                     class="text-muted fw-light">/mes</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Entrenamiento y rutina personalizada y adaptada a tu ritmo y objetivo!</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
-                                <li>Derecho de uso de maquinas de pesas y musculacion continua</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
+                                <li>Derecho de uso de maquinas con pesas, y musculacion continua</li>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 3 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 4 dias a la semana</li>
                                 <i class="bi bi-x text-danger fs-2"></i>
                                 <li>Entrenamiento 5 dias a la semana</li>
                                 <i class="bi bi-x text-danger fs-2"></i>
                             </ul>
-                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+standard&type=phone_number&app_absent=0"
-                                class="w-100 btn btn-lg cards btn-success text-uppercase">Suscríbete</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="w-100 btn btn-lg cards btn-success text-uppercase"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Suscríbete
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3 text-center" id="exampleModalLabel">Formas de
+                                                Pago</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 class="text-start">Efectivo</h4>
+                                            <a class="text-black fs-5"
+                                                href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+standard&type=phone_number&app_absent=0"><i
+                                                    class="bi bi-cash-coin text-success"></i> Pago en el salon</a>
+                                            <h4 class="text-start">Transferencia bancaria</h4>
+                                            <a class="text-black fs-5" href="rellenar"> <img
+                                                    src="./img/icon-256x256.png" width="60px"
+                                                    alt="Icono mercado pago"></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Ya+m%C3%A1s+realicé%C3%B3+el+pago+del+Pack++Estandard&type=phone_number&app_absent=0"
+                                                type="button" class="btn btn-primary">Notificar Transferencia</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,18 +184,51 @@
                                     class="text-muted fw-light">/mes</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Entrenamiento y rutina personalizada y adaptada a tu ritmo y objetivo!</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
-                                <li>Derecho de uso de maquinas de pesas y musculacion continua</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
+                                <li>Derecho de uso de maquinas con pesas, y musculacion continua</li>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 3 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 4 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 5 dias a la semana</li>
                                 <i class="bi bi-x text-danger fs-2"></i>
                             </ul>
-                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+Intermedio&type=phone_number&app_absent=0"
-                                class="w-100 btn btn-lg cards btn-success text-uppercase">Suscríbete</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="w-100 btn btn-lg cards btn-success text-uppercase"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Suscríbete
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3 text-center" id="exampleModalLabel">Formas de
+                                                Pago</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 class="text-start">Efectivo</h4>
+                                            <a class="text-black fs-5"
+                                                href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+Intermedio&type=phone_number&app_absent=0"><i
+                                                    class="bi bi-cash-coin text-success"></i> Pago en el salon</a>
+                                            <h4 class="text-start">Transferencia bancaria</h4>
+                                            <a class="text-black fs-5" href="rellenar"> <img
+                                                    src="./img/icon-256x256.png" width="60px"
+                                                    alt="Icono mercado pago"></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Ya+m%C3%A1s+realicé%C3%B3+el+pago+del+Pack++Avanzado&type=phone_number&app_absent=0"
+                                                type="button" class="btn btn-primary">Notificar Transferencia</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -177,18 +242,51 @@
                                     class="text-muted fw-light">/mes</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Entrenamiento y rutina personalizada y adaptada a tu ritmo y objetivo!</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
-                                <li>Derecho de uso de maquinas de pesas y musculacion continua</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
+                                <li>Derecho de uso de maquinas con pesas, y musculacion continua</li>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 3 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 4 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                                 <li>Entrenamiento 5 dias a la semana</li>
-                                <i class="bi bi-check2 text-primary fs-2"></i>
+                                <i class="bi bi-check2 resaltado fs-2"></i>
                             </ul>
-                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+avanzado&type=phone_number&app_absent=0"
-                                class="w-100 border  btn btn-lg cards btn-success text-uppercase">Suscríbete</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="w-100 btn btn-lg cards btn-success text-uppercase"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Suscríbete
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3 text-center" id="exampleModalLabel">Formas de
+                                                Pago</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 class="text-start">Efectivo</h4>
+                                            <a class="text-black fs-5"
+                                                href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Quisiera+m%C3%A1s+comenzar%C3%B3n+mi+primer+mes+avanzado&type=phone_number&app_absent=0"></i>
+                                                Pago en el salon</a>
+                                            <h4 class="text-start">Transferencia bancaria</h4>
+                                            <a class="text-black fs-5" href="rellenar"> <img
+                                                    src="./img/icon-256x256.png" width="60px"
+                                                    alt="Icono mercado pago"></a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <a href="https://api.whatsapp.com/send/?phone=543815176783&text=Hola!+%21+Ya+m%C3%A1s+realicé%C3%B3+el+pago+del+Pack++Intermedio&type=phone_number&app_absent=0"
+                                                type="button" class="btn btn-primary">Notificar Transferencia</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,8 +294,8 @@
             <hr class="border border-1 opacity-75 mt-4">
         </section>
         <article class="bg-black container-fluid py-3">
-            <h6 class="tituloLista text-light text-center">¿Aun no te decidis si empezar o no?</h6>
-            <p class="text-light text-center fs-1">Contas con la primera clase <b class="resaltado"> 100% GRATIS</b></p>
+            <h6 class="tituloLista text-light text-center">¿Aún no te decidis si empezar o no?</h6>
+            <p class="text-light text-center fs-1">Contás con la primera clase <b class="resaltado"> 100% GRATIS</b></p>
             <h6 class="tituloLista resaltado text-center">EMPEZÁ HOY MISMO</h6>
             <hr class="border border-1 opacity-75 mt-4">
         </article>
