@@ -1,4 +1,4 @@
-# Train CDE  ![logo1|100](https://user-images.githubusercontent.com/106267352/222943788-08c509be-05f6-4d80-a3c8-375ea2571ab7.png)
+# Train CDE  ![logo1|50](https://user-images.githubusercontent.com/106267352/222943788-08c509be-05f6-4d80-a3c8-375ea2571ab7.png)
 
 
 This is a project for a Muscle Training Center  (TRAIN), It's a real case located in San Miguel de Tucuman. This web contains information about the content of this gym, plains of training, location, payment method, and information contact with them.
