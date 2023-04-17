@@ -1,48 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@500&family=Rubik+Vinyl&family=Special+Elite&family=Tilt+Warp&display=swap');
-#estilo{
-    background: linear-gradient(to top ,black, #C9E265 90%);
+
+#estilo {
+    background: linear-gradient(to top, black, #C9E265 90%);
 }
-#letreroLogo{
+
+#letreroLogo {
     font-family: 'Black Ops One', cursive;
 }
+
 .hero-container {
     background: url(./img/cierrese-arriba-muchas-pesas-gimnasia-metal-estante-gimnasio-deporte.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
 }
-#resaltado{
-    color:  #C9E265;
+
+#resaltado {
+    color: #C9E265;
     text-shadow: 6px 5px rgba(75, 188, 5, 0.483);
 }
-#frase{
+
+#frase {
     font-size: 90px;
 }
-main{
+
+main {
     width: 100%;
 }
-.items{
-font-size: 30px;
-font-family:'Oswald', sans-serif;
+
+.items {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
 }
-.tituloLista{
+
+.tituloLista {
     font-size: 50px;
     font-family: 'Black Ops One', cursive;
 }
-#tituloHorario{
+
+#tituloHorario {
     font-size: 30px;
     font-family: 'Black Ops One', cursive;
 }
-#subTituloHorario{
+
+#subTituloHorario {
     font-size: 28px;
     font-family: 'Black Ops One', cursive;
 }
-.cards{
+
+.cards {
     background-color: #C9E265;
 }
-.resaltado{
+
+.resaltado {
     color: #C9E265;
 }
-a{
+
+a {
     text-decoration: none;
 }
