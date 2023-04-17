@@ -47,7 +47,9 @@ main {
     font-size: 28px;
     font-family: 'Black Ops One', cursive;
 }
-
+.imagenes{
+    object-fit: contain;
+}
 .cards {
     background-color: #C9E265;
 }
