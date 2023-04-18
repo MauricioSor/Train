@@ -2,8 +2,8 @@
 
 #estilo {
     background: linear-gradient(60deg, black, #C9E265 90%);
-	animation: girar 4s ease-in-out infinite;
-    background-size: 400% 400%;
+	animation: girar 6s ease-in-out infinite;
+    background-size: 600% 600%;
 	position: relative;
 }
 
