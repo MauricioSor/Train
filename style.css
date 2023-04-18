@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@500&family=Rubik+Vinyl&family=Special+Elite&family=Tilt+Warp&display=swap');
 
 #estilo {
-    background: linear-gradient(to top, black, #C9E265 90%);
+    background: linear-gradient(60deg, black, #C9E265 90%);
+	animation: girar 4s ease-in-out infinite;
+    background-size: 400% 400%;
+	position: relative;
 }
 
+@keyframes girar {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
 #letreroLogo {
     font-family: 'Black Ops One', cursive;
 }
